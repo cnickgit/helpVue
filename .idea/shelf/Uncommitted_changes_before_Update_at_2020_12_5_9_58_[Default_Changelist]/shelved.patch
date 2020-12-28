@@ -1,0 +1,24 @@
+Index: ../vueblog-java/src/main/resources/application-default.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># DataSource Config\r\nspring:\r\n  datasource:\r\n    driver-class-name: com.mysql.cj.jdbc.Driver\r\n    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai\r\n    username: root\r\n    password: 123456\r\nshiro-redis:\r\n  enabled: true\r\n  redis-manager:\r\n    host: 127.0.0.1:6379\r\n    password: 123456
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../vueblog-java/src/main/resources/application-default.yml	(revision ddcf4a2346a3981c14d7a04a118251f49e66dc0c)
++++ ../vueblog-java/src/main/resources/application-default.yml	(date 1606909022468)
+@@ -2,11 +2,11 @@
+ spring:
+   datasource:
+     driver-class-name: com.mysql.cj.jdbc.Driver
+-    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
++    url: jdbc:mysql://182.92.126.206:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+     username: root
+     password: 123456
+ shiro-redis:
+   enabled: true
+   redis-manager:
+-    host: 127.0.0.1:6379
++    host: 182.92.126.206:6379
+     password: 123456
+\ No newline at end of file
