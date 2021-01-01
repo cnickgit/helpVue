@@ -1,21 +1,21 @@
 <template>
   <div>
-    <van-row type="flex" style="margin-top: 20px;">
-      <van-col span="24">编号:{{my.id}} </van-col>
+    <van-row  style="margin-top: 40px;">
+      <van-col type="flex" justify="center" span="24"><span style="margin-left: 18px">编号:{{my.id}}</span> </van-col>
+    </van-row>
+    <van-row class="zt" type="flex" justify="center" style="margin-top: 30px;">
+      <van-col span="6"><span style="margin-left: 30px;color: #ffcd54;">{{my.prescription}}</span></van-col>
+      <van-col span="6"><span style="margin-left: 30px">{{my.prescription - my.remainingTimes}}</span></van-col>
+      <van-col span="6"><span style="margin-left: 10px">{{my.remainingTimes}}</span></van-col>
+      <van-col span="6"><span style="margin-left: 10px;color: red">普通</span></van-col>
     </van-row>
     <van-row type="flex" justify="center" style="margin-top: 20px;">
-      <van-col span="6">可查询总数</van-col>
-      <van-col span="6">已查询</van-col>
-      <van-col span="6">剩余</van-col>
-      <van-col span="6">普通</van-col>
+      <van-col span="6"><span style="margin-left: 18px">可查询总数</span></van-col>
+      <van-col span="6"><span style="margin-left: 18px">已查询</span></van-col>
+      <van-col span="6"><span style="margin-left: 10px">剩余</span></van-col>
+      <van-col span="6"><span style="margin-left: 10px">计费模式</span></van-col>
     </van-row>
-    <van-row type="flex" justify="center" style="margin-top: 20px;">
-      <van-col span="6">{{my.prescription}}</van-col>
-      <van-col span="6">{{my.prescription - my.remainingTimes}}</van-col>
-      <van-col span="6">{{my.remainingTimes}}</van-col>
-      <van-col span="6">计费模式</van-col>
-    </van-row>
-    <h3 style="margin-top: 20px;">有效截止日期: {{my.endTime}}</h3>
+    <h3 style="margin-top: 40px;"><span style="margin-left: 40px">有效截止日期: {{my.endTime == null ? '不限时间' : my.endTime}}</span></h3>
   </div>
 </template>
 
@@ -54,4 +54,8 @@
 </script>
 
 <style scoped>
+  .zt span{
+    font-size: 0.25rem;
+    font-weight: bold;
+  }
 </style>

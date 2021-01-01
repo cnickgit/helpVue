@@ -41,11 +41,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20f3e09f-20b1-4f29-ae81-0053d8d108fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../vueblog-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vueblog-java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vueblog-java/src/main/java/com/markerhub/mapper/ZyjUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vueblog-java/src/main/java/com/markerhub/mapper/ZyjUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vueblog-java/src/main/java/com/markerhub/service/impl/ZyjServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../vueblog-java/src/main/java/com/markerhub/service/impl/ZyjServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vueblog-java/src/main/resources/mapper/zyjUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vueblog-java/src/main/resources/mapper/zyjUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_5_9_58__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_5_9_58__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/app.dcee6d01.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/chunk-vendors.a6f623d5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/fontello.9354499c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.248eb441.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/app.248eb441.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.43a18235.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.43a18235.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/my.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/my.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,12 +72,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../developerTools/apache-maven-3.6.3" />
+        <option name="mavenHome" value="E:/../developerTools/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\developerTools\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -80,9 +93,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../elementui-demo-byf" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../elementui-demo-byf" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="D:\developerTools\IntelliJ IDEA 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -90,6 +103,18 @@
       <recent name="D:\xm\vueblog\vueblog-vue\src\assets" />
       <recent name="D:\xm\vueblog\vueblog-vue\src" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -106,6 +131,10 @@
       <workItem from="1606045845205" duration="26043000" />
       <workItem from="1607685223258" duration="26366000" />
       <workItem from="1608291355277" duration="26909000" />
+      <workItem from="1609289616408" duration="463000" />
+      <workItem from="1609375497755" duration="298000" />
+      <workItem from="1609471176463" duration="1474000" />
+      <workItem from="1609482961269" duration="7734000" />
     </task>
     <task id="LOCAL-00001" summary="照妖镜">
       <created>1606046015030</created>
@@ -181,7 +210,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -199,10 +228,10 @@
                       </list>
                     </value>
                   </entry>
-                  <entry key="structure">
+                  <entry key="roots">
                     <value>
                       <list>
-                        <option value="dir:D:/xm/vueblog/vueblog-vue" />
+                        <option value="$PROJECT_DIR$" />
                       </list>
                     </value>
                   </entry>
@@ -211,16 +240,51 @@
             </State>
           </value>
         </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:E:/vue/helpVue/dist" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
-      </map>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+        <option value="2" />
+      </set>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="照妖镜" />
     <MESSAGE value="调通后端接口" />
     <MESSAGE value="组件图片" />
@@ -232,37 +296,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1609073998942">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1609073998942" />
-    <state x="129" y="55" width="1092" height="610" key="DiffContextDialog" timestamp="1606481242263">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="129" y="55" width="1092" height="610" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1606481242263" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608434088738">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608434088738" />
-    <state x="474" y="65" key="RollbackChangesDialog" timestamp="1606481237863">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="474" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606481237863" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1609074005636">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609074005636" />
-    <state x="476" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609038778185">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="476" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1609038778185" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1607776214153">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1607776214153" />
-    <state x="346" y="49" key="search.everywhere.popup" timestamp="1607219532335">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607219532335" />
+    <state x="281" y="0" key="CommitChangelistDialog2" />
+    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" />
+    <state x="129" y="55" width="1092" height="610" key="DiffContextDialog" />
+    <state x="129" y="55" width="1092" height="610" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" />
+    <state x="463" y="119" key="FileChooserDialogImpl" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" />
+    <state x="474" y="65" key="RollbackChangesDialog" />
+    <state x="474" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" />
+    <state x="476" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" />
+    <state x="476" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" />
+    <state x="339" y="162" key="run.anything.popup" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" />
+    <state x="346" y="49" key="search.everywhere.popup" />
+    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" />
   </component>
 </project>
