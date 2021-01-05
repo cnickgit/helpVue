@@ -1,126 +1,219 @@
 <template>
     <div class="home-page">
-      <van-tabs type="card" @change="changeTab">
+      <van-tabs type="card">
         <van-tab title="旺旺号">
-          <van-search
-            v-model="searchName"
-            :placeholder="placeholder"
-            input-align="center"
-            shape="round"
-            left-icon="none"
-          />
+          <div class="wwtext">
+            <input v-model="searchName" id="aliim" type="text" placeholder="请输入旺旺号">
+          </div>
           <van-button class="search-btn" round type="info" size="large" @click="search()">查询</van-button>
-          <div v-if="showResult" class="wwdata">
-            <van-row  justify="center">
-              <van-col span="12">买家: {{data.aliimSim}}****</van-col>
-              <van-col span="12">实名认证: {{data.nameconform_word}} {{hy}} {{tbhy}}</van-col>
-            </van-row>
-            <van-row  justify="center">
-              <van-col span="12">买家信誉: {{data.buyerCre}}</van-col>
-              <van-col span="12">注册日期: {{data.created}}</van-col>
-            </van-row>
-            <van-row  justify="center">
-              <van-col span="12">商家信誉: {{data.sellerCredit}}</van-col>
-              <van-col span="12">	淘龄: {{data.registDay}}</van-col>
-            </van-row>
-            <van-row  justify="center">
-              <van-col span="12">性别: {{data.sex}}</van-col>
-              <van-col span="12">	买家总周平均: {{data.buyerAvg}}</van-col>
-            </van-row>
-            <van-row justify="center">
-              <van-col span="12">好评率: {{data.received_rate}}</van-col>
-            </van-row>
-            <van-row justify="center">
-              <van-col span="24">查询时间: {{data.queryTime}}</van-col>
-            </van-row>
-
-            <h1 class="userjb_t">用户被打标情况</h1>
-
-            <van-row class="userjb_c" justify="center">
-              <van-col span="3">兔子</van-col>
-              <van-col span="3">蜜罐</van-col>
-              <van-col span="3">狐狸</van-col>
-              <van-col span="3">鳄鱼</van-col>
-              <van-col span="3">野狗</van-col>
-              <van-col span="3">老鼠</van-col>
-              <van-col span="3">降权</van-col>
-            </van-row>
-            <van-row class="userjb_c">
-              <van-col span="3">{{data.type1}}</van-col>
-              <van-col span="3">{{data.type2}}</van-col>
-              <van-col span="3">{{data.type3}}</van-col>
-              <van-col span="3">{{data.type4}}</van-col>
-              <van-col span="3">{{data.type5}}</van-col>
-              <van-col span="3">{{data.type6}}</van-col>
-              <van-col span="3">{{data.downNum}}</van-col>
-            </van-row>
-
-            <van-row class="userjb_c" justify="center">
-              <van-col span="8">好评: {{data.goodNum}}</van-col>
-              <van-col span="8">差评: {{data.badNum}}</van-col>
-              <van-col span="8">证明: {{data.proveNum}}</van-col>
-            </van-row>
-            <van-row class="userjb_c" justify="center">
-              <van-col span="12">本周查过商家: {{data.nearWeekShop}}</van-col>
-              <van-col span="12">上周查过商家: {{data.lastWeekShop}}</van-col>
-            </van-row>
+          <div class="wwdatp1" v-if="showWangwangDefault">
+            <p>
+              您近七天共查号：<span>5378</span>
+            </p>
+            <p>
+              查出打标号：<span>350[0.88%]</span>
+            </p>
+            <p>
+              查出降权号：<span>4274[10.74%]</span>
+            </p>
+            <p>
+              挽回损失约：<span>¥120480.0元
+              </span>
+            </p>
+            <p>
+              昨天(0103)打标号查出比例：<span>0.66%</span>
+            </p>
+            <p>
+              昨天(0103)降权号查出比例：<span>12.3%</span>
+            </p>
+			      <div style="margin-top:10px;text-align:center">
+              <a href="http://42.192.182.153/inter/app_detail.jsp?id=527" target="_blank">
+              <img id="shopBetter" src="http://cktool.cy1788.com/photo_mag_upload/wxqq/f3ccdd27d2000e3f9255a7e3e2c48800.jpg">
+              </a>
+            </div>
           </div>
-          <div v-if="showDefault">
-            <van-row class="content">
-              <van-col span="24">兔子：拿完了商家的返款就恶意退款</van-col>
-            </van-row>
-            <van-row class="content">
-              <van-col span="24">蜜獾：用各种方式威胁你给钱</van-col>
-            </van-row>
-            <van-row class="content">
-              <van-col span="24">狐狸：用各种方式骗你钱了</van-col>
-            </van-row>
-            <van-row class="content">
-              <van-col span="24">鳄鱼：用发票，商标，假货等方式坑你钱</van-col>
-            </van-row>
-            <van-row class="content">
-              <van-col span="24">野狗：接完了单给了你差评进行要挟</van-col>
-            </van-row>
-            <van-row class="content">
-              <van-col span="24">老鼠：用了淘客链接来拍你的单</van-col>
-            </van-row>
-            <van-row class="content">
-              <van-col span="24">降权：导致商家单品降权的帐号</van-col>
-            </van-row>
-          </div>
+          <template v-else>
+            <div class="wwdata">
+              <table width="100%">
+                <tbody><tr>
+                  <td>买家：<span id="aliimSim">{{data.aliimSim}}</span>****
+                  </td>
+                  <td class="smimg">实名认证： <span id="nameconform" :style="{color: data.nameconform_word_color}">{{data.nameconform_word}}</span>&nbsp; <span id="vip_level" style="color: rgb(255, 124, 0);">{{hy}} </span>&nbsp; <span id="vip_info" style="color: rgb(97, 63, 113);">{{tbhy}}</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="smimg2">买家信誉：<span id="buyerCre" style="color: rgb(102, 102, 102);">{{data.buyerCre}}</span></td>
+                  <td>注册日期：<span id="created" style="color: rgb(102, 102, 102);">{{data.created}}</span></td>
+                </tr>
+                <tr>
+                  <td class="smimg2">商家信誉：<span id="sellerCredit" style="color: rgb(102, 102, 102);">{{data.sellerCredit}}</span></td>
+                  <td>淘龄：<span id="registDay" style="color: rgb(102, 102, 102);">{{data.registDay}}</span></td>
+                </tr>
+                <tr>
+                  <td>性别：<span id="sex" style="color: rgb(102, 102, 102);">{{data.sex}}</span></td>
+                  <td>买家总周平均：<span id="buyerAvg">{{data.buyerAvg}}</span></td>
+                </tr>
+                <tr>
+                  <td>好评率：<span id="received_rate" style="color: rgb(102, 102, 102);">{{data.received_rate}}</span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">查询时间：<span id="queryTime">{{data.queryTime}}</span></td>
+                </tr>
+              </tbody></table>
+            </div>
+            <div class="userbox3">
+              <div style="text-align: right;">
+                <a style="font-size: 0.1rem;text-decoration: underline;" href="http://file.cy1788.com/ckdown/video/down/jqup.rar" target="_blank">
+                  PC降权提交软件（12月10日更新）
+                </a>
+              </div>
+              <div class="userjb_t">
+                用户被打标情况 <span id="sinf"> <img src="@/assets/q.png" title="	
+                    评价：没有实质证据证明对方是坏人，只是合作不愉快，
+                      请用评价功能吧，当然，请别涉及隐私，否则可能会被剥夺举报权！
+                      兔子：拿完了商家的返款就恶意退款跑了！
+                      蜜獾：用各种方式威胁你给钱！狐狸：用各种方式骗你钱了！
+                      鳄鱼：用工商，发票，字体，商标，假货各种方式来坑你钱了！
+                      野狗：接完了单给了你差评进行要挟！
+                      老鼠:用了淘客链接来拍你的单！
+                      降权:被稽查系统判定虚假交易过导致商家单品降权的帐号，
+                      下面的数字为照妖镜用户数，实际降权的店铺数是大于等于显示出来的数字的！" onclick="javascript:alert('兔子：拿完了商家的返款就恶意退款跑了！\n'+
+                    '蜜獾：用各种方式威胁你给钱！\n'+
+                    '狐狸：用各种方式骗你钱了！\n'+
+                    '鳄鱼：用工商，发票，字体，商标，假货各种方式来坑你钱了！\n'+
+                    '野狗：接完了单给了你差评进行要挟！\n'+
+                    '老鼠:用了淘客链接来拍你的单！\n'+
+                    '降权:被稽查系统判定虚假交易过导致商家单品降权的帐号，\n'+
+                    '下面的数字为照妖镜用户数，实际降权的店铺数是大于等于显示出来的数字的！\n'+
+                    '评价：没有实质证据证明对方是坏人，只是合作不愉快，请用评价功能吧，\n'+
+                    '当然，请别涉及隐私，否则可能会被剥夺举报权！')">
+                </span>
+              </div>
+              <ul>
+                <li title="跑单兔子">
+                  <div class="pop-up">兔子</div>
+                  <p></p> <span id="tz" style="color: black;">{{data.type1}}</span>
+                </li>
+                <li>
+                  <div class="pop-up">蜜獾</div>
+                  <p></p> <span id="mg" style="color: black;">{{data.type2}}</span>
+                </li>
+                <li>
+                  <div class="pop-up">狐狸</div>
+                  <p></p> <span id="hl" style="color: black;">{{data.type3}}</span>
+                </li>
+                <li>
+                  <div class="pop-up">鳄鱼</div>
+                  <p></p> <span id="ey" style="color: black;">{{data.type4}}</span>
+                </li>
+                <li>
+                  <div class="pop-up">野狗</div>
+                  <p></p> <span id="yg" style="color: black;">{{data.type5}}</span>
+                </li>
+                <li>
+                  <div class="pop-up">老鼠</div>
+                  <p></p> <span id="ls" style="color: black;">{{data.type6}}</span>
+                </li>
+                <li>
+                  <div class="pop-up">降权</div>
+                  <p></p> <span id="downNum" style="color: red; font-weight: bold;">{{data.downNum}}</span>
+                </li>
+              </ul>
+              <div class="user_bottom ub of">
+                <p>
+                  好评：<span id="goodNum" class="fr" style="color: black;">{{data.goodNum}}</span>
+                </p>
+                <p>
+                  差评：<span id="badNum" class="fr" style="color: black;">{{data.badNum}}</span>
+                </p>
+                <p>
+                  证明：<span id="proveNum" class="fr" style="color: black;">{{data.proveNum}}</span>
+                </p>
+              </div>
+              <div class="user_bottom of">
+                <p>
+                  本周查过商家：<span class="cor2 fr" id="nearWeekShop">{{data.nearWeekShop}}</span>
+                </p>
+                <p>
+                  上周查过商家：<span class="cor2 fr" id="lastWeekShop">{{data.lastWeekShop}}</span>
+                </p>
+              </div>
+            </div>
+            <a class="wwbtn7" target="_blank" href="http://121.196.192.84/inter/app_detail.jsp?id=519"><i></i>店铺运营诊断</a>
+            <a class="wwbtn3"><i></i>信誉区间查询</a>
+          </template>
         </van-tab>
         <van-tab title="微信/QQ">
-          <div style="margin-top: 20px">
-            <van-search
-                    v-model="mark"
-                    :placeholder="placeholder"
-                    input-align="center"
-            />
+          <div class="wwtext">
+            <input v-model="mark" id="wxorqq" type="text" placeholder="请输入微信/QQ">
           </div>
-          <div>
-            <van-button round type="info" size="large" @click="searchMark()">查询</van-button>
+          <van-button class="search-btn" round type="info" size="large" @click="searchMark()">查询</van-button>
+          <template v-if="showWeixinDefault">
+            <div class="wwdatp1">
+              <p>
+                微信/QQ打标总数：<span>468.33W</span>
+              </p>
+              <p>
+                昨日新增：<span>984</span>
+              </p>
+              <p>
+                昨天(0104)打标微信号查出比例：<span>9.49%</span>
+              </p>
+              <p>
+                昨天(0104)打标QQ号查出比例：<span>0.0%</span>
+              </p>
+              <div style="margin-top:10px;text-align:center"><a href="http://42.192.182.153/inter/app_detail.jsp?id=527" target="_blank"><img id="shopBetter" src="http://cktool.cy1788.com/photo_mag_upload/wxqq/f3ccdd27d2000e3f9255a7e3e2c48800.jpg"></a></div>
+            </div>
+          </template>
+          <div class="wwdatp2">
+            <p>
+              <i>友情提醒：</i>本查询含51所有数据
+            </p>
           </div>
-          <h2 class="userjb_t">用户被打标情况</h2>
-          <div>
-            <van-row  justify="center">
-              <van-col v-if="showHuli" span="8">骗子狐狸</van-col>
-              <van-col v-if="showEy" span="8">打假鳄鱼</van-col>
-              <van-col span="8"></van-col>
-            </van-row>
-            <van-row  justify="center">
-              <van-col span="8" v-if="showHuli" ><van-image width="80" height="80" :src="huli" /></van-col>
-              <van-col span="8" v-if="showEy"><van-image width="80" height="80" :src="ey" /></van-col>
-              <van-col span="8"></van-col>
-            </van-row>
-            <van-row  justify="center">
-              <van-col span="8" v-if="showHuli" >{{markObj.hlwx}}</van-col>
-              <van-col span="8" v-if="showEy">{{markObj.eywx}}</van-col>
-              <van-col span="8"></van-col>
-            </van-row>
+          <div v-if="!showWeixinDefault" class="userbox4">
+            <div class="userjb_t">用户被打标情况</div>
+            <ul>
+              <li v-if="showHuli">
+                <div class="pop-up">骗子狐狸</div>
+                <p>
+                  <img src="@/assets/huli.png">
+                </p> <span id="hlwx" style="color: red; font-weight: bold">{{markObj.hlwx}}</span>
+              </li>
+              <li v-if="showEy">
+                <div class="pop-up">打假鳄鱼</div>
+                <p>
+                  <img src="@/assets/eyu.png">
+                </p> <span id="eywx" style="color: rgb(102, 102, 102);">{{markObj.eywx}}</span>
+              </li>
+            </ul>
           </div>
         </van-tab>
-        <van-tab title="淘客">内容 3</van-tab>
+        <van-tab title="淘客">
+          <div class="ckTkLeft">
+            <div class="ckTkteaDiv bor">
+              <textarea class="ckTktea" onkeyup="this.value=this.value.replace(/[^\r\n0-9]/g,'');"></textarea>
+            </div>
+            <p class="ckTk-text">输入多个订单号请换行，最多输入10个</p>
+            <a class="ckTkcZBtn tc">查找</a>
+          </div>
+          <div class="ckTkRight">
+            <table>
+              <thead>
+                <tr>
+                  <td width="70%">订单号</td>
+                  <td width="30%">是否淘客</td>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </van-tab>
       </van-tabs>
+      <div v-show="showLoading" class="loading">
+        <div class="loadimg">
+          <img src="@/assets/loading.gif">
+        </div>
+      </div>
     </div>
 </template>
 
@@ -151,18 +244,19 @@
               markObj: {},
               cookie: '',
               token: '',
-              showDefault: true,
-              showResult: false,
+              showWangwangDefault: true,
+              showWeixinDefault: true,
               active: 0,
               searchName: '',
               showEy: false,
               showHuli: false,
               data: {},
-              placeholder: '请输入旺旺号'
+              showLoading: false
           }
        },
        methods: {
            searchMark(){
+             this.showLoading = true;
              this.$axios.get("/searchMarking?searchName="+this.mark+"&code="+this.token).then(res => {
                console.log("res:",res)
                if(res && res.data.code === 200){
@@ -173,25 +267,26 @@
                  if(res.data.data.hlwx == '有'){
                    this.showHuli = true
                  }
+                 this.showWeixinDefault = false;
                  if(res.data.data.result === 'wxnodata'){
-                   Toast.fail("当前微信或QQ没有打标记录")
+                   this.showWeixinDefault = true;
+                   alert("当前微信或QQ没有打标记录")
                  }
                }
+              this.showLoading = false;
              })
            },
            search(){
+             this.showLoading = true;
              this.$axios.get("/search?searchName="+this.searchName+"&code="+this.token).then(res => {
                   if(res.data.data == null){
-                    this.showDefault = true;
-                    this.showResult = false;
-                    Toast.fail(res.data.msg);
+                    this.showWangwangDefault = true;
+                    alert(res.data.msg);
                   }else if(res.data.data.result != null && res.data.data.result == '账号不存在'){
-                   this.showDefault = true;
-                   this.showResult = false;
-                   Toast.fail("账号不存在")
+                   this.showWangwangDefault = true;
+                    alert("账号不存在")
                  }else{
-                    this.showDefault = false;
-                    this.showResult = true;
+                    this.showWangwangDefault = false;
                     this.data = res.data.data;
                     if(this.data.vip_level == '0'){
                         this.hy = '普通会员';
@@ -214,16 +309,9 @@
                         this.tbhy = '淘宝V6会员'
                     }
                  }
+                this.showLoading = false;
              })
            },
-         changeTab(name, title) {
-             this.$nextTick(() => {
-               this.placeholder = `请输入${title}`;
-             });
-             console.log(name, title)
-           console.log(this.placeholder)
-
-         }
        },
        created() {
          this.token = this.$route.query.code;
@@ -236,6 +324,7 @@
 </script>
 
 <style lang="less" scoped>
+  
   .home-page {
     /deep/ .van-tabs__nav--card {
       width: 100%;
@@ -271,13 +360,19 @@
       padding: 0;
     }
     /deep/ .van-tabs__content {
-      padding: 0 0.16rem;
+      padding: 0 0.16rem 0.7rem;
     }
     /deep/ .van-search {
       border: 1px solid #ababab;
       height: 0.5rem;
       border-radius: 2.5rem;
       margin-top: 0.1rem;
+      input {
+        font-size: 12.48px;
+      }
+    }
+    /deep/ .van-search__content {
+      background-color: transparent;
     }
     /deep/ .search-btn {
       margin-top: 0.15rem;
@@ -291,25 +386,10 @@
       font-size: 0.17rem;
       cursor: pointer;
       border: none;
+      box-shadow: 0 0 0.05rem 0.01rem rgba(255,82,119,.29);
     }
-    .wwdata {
-      background: #fafafa;
-      border-radius: 0.05rem;
-      margin-top: 0.2rem;
-      .van-row {
-        margin-top: 4px;
-      }
-    }
-    .userjb_t {
-      text-align: center;
-      margin-top: 0.4rem;
-    }
-    .userjb_c {
-      display: flex;
-      justify-content: space-between;
-      /deep/ .van-col {
-        text-align: center;
-      }
+    .wwbtn7 {
+      background-image: -webkit-linear-gradient( -90deg, rgb(255,154,55) 0%, rgb(255,190,49) 100%);
     }
     .red {
       color: #ff5277;

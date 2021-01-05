@@ -1,6 +1,6 @@
 <template>
     <div>
-        <van-tabbar v-model="active" style=" margin-top:20px;height: 50px">
+        <van-tabbar v-model="active" active-color="#ff5076" inactive-color="#666" style=" margin-top:20px;height: 50px">
             <van-tabbar-item
                     v-for="(item,index) in tabbars"
                     :key="index"
@@ -8,7 +8,7 @@
             >
                 <span :class="currIndex == index ? active:''">{{item.title}}</span>
                 <template slot="icon" slot-scope="props">
-                    <img :src="item.normal">
+                    <img :src="props.active ? item.activeIco : item.normalIco">
                 </template>
             </van-tabbar-item>
         </van-tabbar>
@@ -36,13 +36,15 @@
                     {
                         name: "HomePage",
                         title: "首页",
-                        normal: require('@/assets/home_ico_active.png'),
+                        normalIco: require('@/assets/home_ico.png'),
+                        activeIco: require('@/assets/home_ico_active.png'),
                         active: 0
                     },
                     {
                         name: "My",
                         title: "我的",
-                        normal: require('@/assets/my_ico.png'),
+                        normalIco: require('@/assets/my_ico.png'),
+                        activeIco: require('@/assets/my_ico_active.png'),
                         active: 1
                     }
                 ],
