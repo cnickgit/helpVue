@@ -68,7 +68,7 @@
                 </a>
               </div>
               <div class="userjb_t">
-                用户被打标情况 <span id="sinf"> <img src="@/assets/q.png" title="	
+                用户被打标情况 <span id="sinf"> <img src="@/assets/q.png" title="
                     评价：没有实质证据证明对方是坏人，只是合作不愉快，
                       请用评价功能吧，当然，请别涉及隐私，否则可能会被剥夺举报权！
                       兔子：拿完了商家的返款就恶意退款跑了！
@@ -276,7 +276,12 @@
               this.showLoading = false;
              })
            },
+
            search(){
+             if(this.searchName == '' || this.searchName == null){
+               alert("提交长度非法，旺旺为2-25位，请重新提交！")
+               return;
+             }
              this.showLoading = true;
              this.$axios.get("/search?searchName="+this.searchName+"&code="+this.token).then(res => {
                   if(res.data.data == null){
@@ -324,7 +329,7 @@
 </script>
 
 <style lang="less" scoped>
-  
+
   .home-page {
     /deep/ .van-tabs__nav--card {
       width: 100%;

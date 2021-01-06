@@ -5,6 +5,7 @@ module.exports = {
       warnings: false,
       errors: true
     },
+    // 182.92.126.206
     // 配置代理 （以接口 https://www.easy-mock.com/mock/5ce2a7854c85c12abefbae0b/api 说明）
     proxy: {
       "/api": {
