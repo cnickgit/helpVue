@@ -111,7 +111,8 @@ table {border-collapse:collapse;border-spacing:0;border:0;width:100%;}
 	-moz-box-shadow: 0 0 0.05rem 0.01rem rgba(255,49,93,.5);box-shadow: 0 0 0.05rem 0.01rem rgba(255,49,93,.5);background-image: -webkit-linear-gradient(top, #ff7693, #ff315d);background-image: -moz-linear-gradient(top, #ff7693, #ff315d);background-image: -o-linear-gradient(top, #ff7693, #ff315d);background-image: -ms-linear-gradient(top, #ff7693, #ff315d);background-image: linear-gradient(to bottom, #ff7693, #ff315d);cursor:pointer;}
 .userjb_t{font-size:0.18rem;font-weight:bold;margin-top:0.01rem;border-radius: 0.05rem;line-height: 0.40rem;text-align: center}
 .userjb_t span{display:inline-block;font-size:0.12rem;color:#999;font-weight:normal;padding-left:0.1rem;}
-.userbox3 ul,.userbox4 ul{margin-top:0.1rem;display: flex;justify-content: space-between;}
+.userbox3 ul{margin-top:0.1rem;display: flex;justify-content: space-between;}
+.userbox4 ul{margin-top:0.1rem;}
 .userbox3 li{width:0.3rem;margin:0.05rem 0 0 0.14rem;display:inline-block;text-align:center;}
 .userbox4 li{width:0.55rem;margin:0.05rem 0.13rem;display:inline-block;text-align:center;}
 .pop-up{display:inline-block;width:100%;background:#F8F8F8;padding:0 0.03rem;line-height:0.2rem;border-radius:0.1rem; font-size:0.1rem;margin-bottom:0.05rem;}
