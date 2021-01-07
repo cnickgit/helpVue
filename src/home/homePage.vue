@@ -27,7 +27,7 @@
               昨天(0103)降权号查出比例：<span>12.3%</span>
             </p>
 			      <div style="margin-top:10px;text-align:center">
-              <a href="http://42.192.182.153/inter/app_detail.jsp?id=527" target="_blank">
+              <a href="https://docs.qq.com/doc/DRXBzS2NCVEpsREpX" target="_blank">
               <img id="shopBetter" src="http://cktool.cy1788.com/photo_mag_upload/wxqq/f3ccdd27d2000e3f9255a7e3e2c48800.jpg">
               </a>
             </div>
@@ -92,42 +92,52 @@
               <ul>
                 <li title="跑单兔子">
                   <div class="pop-up">兔子</div>
-                  <p></p> <span id="tz" style="color: black;">{{data.type1}}</span>
+                  <p></p> <span v-if="data.type1 == 0" id="tz" style="color: black;">{{data.type1}}</span>
+                  <span v-if="data.type1 > 0" id="tz" style="color: red;">{{data.type1}}</span>
                 </li>
                 <li>
                   <div class="pop-up">蜜獾</div>
-                  <p></p> <span id="mg" style="color: black;">{{data.type2}}</span>
+                  <p></p> <span v-if="data.type2 == 0" id="mg" style="color: black;">{{data.type2}}</span>
+                  <span id="mg" v-if="data.type2 > 0" style="color: red;">{{data.type2}}</span>
                 </li>
                 <li>
                   <div class="pop-up">狐狸</div>
-                  <p></p> <span id="hl" style="color: black;">{{data.type3}}</span>
+                  <p></p> <span v-if="data.type3 == 0" id="hl" style="color: black;">{{data.type3}}</span>
+                  <span v-if="data.type3 > 0" id="hl" style="color: red;">{{data.type3}}</span>
                 </li>
                 <li>
                   <div class="pop-up">鳄鱼</div>
-                  <p></p> <span id="ey" style="color: black;">{{data.type4}}</span>
+                  <p></p> <span v-if="data.type4 == 0" id="ey" style="color: black;">{{data.type4}}</span>
+                  <span id="ey" v-if="data.type4 > 0" style="color: red;">{{data.type4}}</span>
                 </li>
                 <li>
                   <div class="pop-up">野狗</div>
-                  <p></p> <span id="yg" style="color: black;">{{data.type5}}</span>
+                  <p></p> <span v-if="data.type5 == 0" id="yg" style="color: red;">{{data.type5}}</span>
+                  <span v-if="data.type5 > 0" id="yg" style="color: black;">{{data.type5}}</span>
                 </li>
                 <li>
                   <div class="pop-up">老鼠</div>
-                  <p></p> <span id="ls" style="color: black;">{{data.type6}}</span>
+                  <p></p> <span v-if="data.type6 == 0" id="ls" style="color: black;">{{data.type6}}</span>
+                  <span v-if="data.type6 > 0" id="ls" style="color: red;">{{data.type6}}</span>
                 </li>
                 <li>
                   <div class="pop-up">降权</div>
-                  <p></p> <span id="downNum" style="color: red; font-weight: bold;">{{data.downNum}}</span>
+                  <p></p> <span v-if="data.downNum == 0" id="downNum" style="color: black;">{{data.downNum}}</span>
+                  <span v-if="data.downNum > 0" id="downNum" style="color: red;">{{data.downNum}}</span>
                 </li>
               </ul>
               <div class="user_bottom ub of">
                 <p>
-                  好评：<span id="goodNum" class="fr" style="color: black;">{{data.goodNum}}</span>
+                  好评：<span v-if="data.goodNum == 0" id="goodNum" class="fr" style="color: black;">{{data.goodNum}}</span>
+                  <span v-if="data.goodNum > 0" id="goodNum" class="fr" style="color: red;">{{data.goodNum}}</span>
                 </p>
                 <p>
-                  差评：<span id="badNum" class="fr" style="color: black;">{{data.badNum}}</span>
+                  差评：<span v-if="data.badNum == 0" id="badNum" class="fr" style="color: black;">{{data.badNum}}</span>
+                  <span v-if="data.badNum > 0" id="badNum" class="fr" style="color: red;">{{data.badNum}}</span>
                 </p>
                 <p>
-                  证明：<span id="proveNum" class="fr" style="color: black;">{{data.proveNum}}</span>
+                  证明：<span v-if="data.proveNum == 0" id="proveNum" class="fr" style="color: black;">{{data.proveNum}}</span>
+                  <span v-if="data.proveNum > 0" id="proveNum" class="fr" style="color: red;">{{data.proveNum}}</span>
                 </p>
               </div>
               <div class="user_bottom of">
@@ -139,7 +149,7 @@
                 </p>
               </div>
             </div>
-            <a class="wwbtn7" target="_blank" href="http://121.196.192.84/inter/app_detail.jsp?id=519"><i></i>店铺运营诊断</a>
+            <a class="wwbtn7" target="_blank" href="https://docs.qq.com/doc/DRXBzS2NCVEpsREpX"><i></i>店铺运营诊断</a>
             <a class="wwbtn3"><i></i>信誉区间查询</a>
           </template>
         </van-tab>
@@ -157,12 +167,12 @@
                 昨日新增：<span>984</span>
               </p>
               <p>
-                昨天(0104)打标微信号查出比例：<span>9.49%</span>
+                昨天打标微信号查出比例：<span>9.49%</span>
               </p>
               <p>
-                昨天(0104)打标QQ号查出比例：<span>0.0%</span>
+                昨天打标QQ号查出比例：<span>0.0%</span>
               </p>
-              <div style="margin-top:10px;text-align:center"><a href="http://42.192.182.153/inter/app_detail.jsp?id=527" target="_blank"><img id="shopBetter" src="http://cktool.cy1788.com/photo_mag_upload/wxqq/f3ccdd27d2000e3f9255a7e3e2c48800.jpg"></a></div>
+              <div style="margin-top:10px;text-align:center"><a href="https://docs.qq.com/doc/DRXBzS2NCVEpsREpX" target="_blank"><img id="shopBetter" src="http://cktool.cy1788.com/photo_mag_upload/wxqq/f3ccdd27d2000e3f9255a7e3e2c48800.jpg"></a></div>
             </div>
           </template>
           <div class="wwdatp2">
@@ -173,13 +183,13 @@
           <div v-if="!showWeixinDefault" class="userbox4">
             <div class="userjb_t">用户被打标情况</div>
             <ul>
-              <li v-if="showHuli">
+              <li>
                 <div class="pop-up">骗子狐狸</div>
                 <p>
                   <img src="@/assets/huli.png">
                 </p> <span id="hlwx" style="color: red; font-weight: bold">{{markObj.hlwx}}</span>
               </li>
-              <li v-if="showEy">
+              <li>
                 <div class="pop-up">打假鳄鱼</div>
                 <p>
                   <img src="@/assets/eyu.png">

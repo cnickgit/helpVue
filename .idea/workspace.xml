@@ -42,9 +42,8 @@
   <component name="ChangeListManager">
     <list default="true" id="20f3e09f-20b1-4f29-ae81-0053d8d108fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tabbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabbar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/homePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/homePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +125,8 @@
       <workItem from="1609815801846" duration="428000" />
       <workItem from="1609826469858" duration="1874000" />
       <workItem from="1609829008097" duration="816000" />
-      <workItem from="1609899565200" duration="3394000" />
+      <workItem from="1609899565200" duration="3554000" />
+      <workItem from="1609987728222" duration="3480000" />
     </task>
     <task id="LOCAL-00001" summary="照妖镜">
       <created>1606046015030</created>
@@ -205,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609493102580</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="标题与校验">
+      <created>1609913374826</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1609913374826</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +300,8 @@
     <MESSAGE value="轮号" />
     <MESSAGE value="1" />
     <MESSAGE value="部署问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="部署问题" />
+    <MESSAGE value="标题与校验" />
+    <option name="LAST_COMMIT_MESSAGE" value="标题与校验" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="0" key="CommitChangelistDialog2" />

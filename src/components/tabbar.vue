@@ -41,6 +41,27 @@
                         active: 0
                     },
                     {
+                        name: "HomePage",
+                        title: "我要打标",
+                        normalIco: require('@/assets/report_ico.png'),
+                        activeIco: require('@/assets/report_ico_active.png'),
+                        active: 0
+                    },
+                    {
+                        name: "HomePage",
+                        title: "客服",
+                        normalIco: require('@/assets/teas_ico.png'),
+                        activeIco: require('@/assets/teas_ico_active.png'),
+                        active: 0
+                    },
+                    {
+                        name: "HomePage",
+                        title: "打标记录",
+                        normalIco: require('@/assets/save_ico.png'),
+                        activeIco: require('@/assets/save_ico_active.png'),
+                        active: 0
+                    },
+                    {
                         name: "My",
                         title: "我的",
                         normalIco: require('@/assets/my_ico.png'),
