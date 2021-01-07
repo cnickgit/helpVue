@@ -42,8 +42,7 @@
   <component name="ChangeListManager">
     <list default="true" id="20f3e09f-20b1-4f29-ae81-0053d8d108fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tabbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/homePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/homePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +125,7 @@
       <workItem from="1609826469858" duration="1874000" />
       <workItem from="1609829008097" duration="816000" />
       <workItem from="1609899565200" duration="3554000" />
-      <workItem from="1609987728222" duration="3480000" />
+      <workItem from="1609987728222" duration="4974000" />
     </task>
     <task id="LOCAL-00001" summary="照妖镜">
       <created>1606046015030</created>
@@ -212,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609913374826</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="细节更改">
+      <created>1609992928798</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609992928798</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +307,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="部署问题" />
     <MESSAGE value="标题与校验" />
-    <option name="LAST_COMMIT_MESSAGE" value="标题与校验" />
+    <MESSAGE value="细节更改" />
+    <option name="LAST_COMMIT_MESSAGE" value="细节更改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="0" key="CommitChangelistDialog2" />
