@@ -3,7 +3,7 @@
       <van-tabs type="card">
         <van-tab title="旺旺号">
           <div class="wwtext">
-            <input v-model="searchName" id="aliim" type="text" placeholder="请输入旺旺号">
+            <input v-model.trim="searchName" id="aliim" type="text" placeholder="请输入旺旺号">
           </div>
           <van-button class="search-btn" round type="info" size="large" @click="search()">查询</van-button>
           <div class="wwdatp1" v-if="showWangwangDefault">
@@ -21,10 +21,10 @@
               </span>
             </p>
             <p>
-              昨天(0103)打标号查出比例：<span>0.66%</span>
+              昨天打标号查出比例：<span>0.66%</span>
             </p>
             <p>
-              昨天(0103)降权号查出比例：<span>12.3%</span>
+              昨天降权号查出比例：<span>12.3%</span>
             </p>
 			      <div style="margin-top:10px;text-align:center">
               <a href="https://docs.qq.com/doc/DRXBzS2NCVEpsREpX" target="_blank">
@@ -46,11 +46,17 @@
                   <td>注册日期：<span id="created" style="color: rgb(102, 102, 102);">{{data.created}}</span></td>
                 </tr>
                 <tr>
-                  <td class="smimg2">商家信誉：<span id="sellerCredit" style="color: rgb(102, 102, 102);">{{data.sellerCredit}}</span></td>
+                  <td class="smimg2">商家信誉：
+                    <span v-if="data.sellerCredit == '未开店'" id="sellerCredit" style="color: red;">{{data.sellerCredit}}</span>
+                    <span v-if="data.sellerCredit != '未开店'" id="sellerCredit" style="color: rgb(102, 102, 102);">{{data.sellerCredit}}</span>
+                  </td>
                   <td>淘龄：<span id="registDay" style="color: rgb(102, 102, 102);">{{data.registDay}}</span></td>
                 </tr>
                 <tr>
-                  <td>性别：<span id="sex" style="color: rgb(102, 102, 102);">{{data.sex}}</span></td>
+                  <td>性别：
+                    <span v-if="data.sex != '保密'" id="sex" style="color: rgb(102, 102, 102);">{{data.sex}}</span>
+                    <span v-if="data.sex == '保密'" id="sex" style="color: red;">{{data.sex}}</span>
+                  </td>
                   <td>买家总周平均：<span id="buyerAvg">{{data.buyerAvg}}</span></td>
                 </tr>
                 <tr>
@@ -112,8 +118,8 @@
                 </li>
                 <li>
                   <div class="pop-up">野狗</div>
-                  <p></p> <span v-if="data.type5 == 0" id="yg" style="color: red;">{{data.type5}}</span>
-                  <span v-if="data.type5 > 0" id="yg" style="color: black;">{{data.type5}}</span>
+                  <p></p> <span v-if="data.type5 == 0" id="yg" style="color: black;">{{data.type5}}</span>
+                  <span v-if="data.type5 > 0" id="yg" style="color: red;">{{data.type5}}</span>
                 </li>
                 <li>
                   <div class="pop-up">老鼠</div>
@@ -155,7 +161,7 @@
         </van-tab>
         <van-tab title="微信/QQ">
           <div class="wwtext">
-            <input v-model="mark" id="wxorqq" type="text" placeholder="请输入微信/QQ">
+            <input v-model.trim="mark" id="wxorqq" type="text" placeholder="请输入微信/QQ">
           </div>
           <van-button class="search-btn" round type="info" size="large" @click="searchMark()">查询</van-button>
           <template v-if="showWeixinDefault">
@@ -266,9 +272,12 @@
        },
        methods: {
            searchMark(){
+             if(this.mark == '' || this.mark == null){
+               alert("提交长度非法，请输入有效微信或QQ号！");
+               return;
+             }
              this.showLoading = true;
              this.$axios.get("/searchMarking?searchName="+this.mark+"&code="+this.token).then(res => {
-               console.log("res:",res)
                if(res && res.data.code === 200){
                  this.markObj = res.data.data;
                  if(res.data.data.eywx == '有'){

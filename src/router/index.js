@@ -7,6 +7,9 @@ import BlogDetail from '../views/BlogDetail.vue'
 import HomePage from "@/home/homePage";
 import My from "@/page/my.vue";
 import UserLogin from "@/components/Login.vue";
+import MarkingRecord from "../views/MarkingRecord";
+import CustomerService from "../views/CustomerService";
+import Mark from "../views/Mark";
 
 Vue.use(VueRouter)
 
@@ -16,6 +19,30 @@ const routes = [
     path: '/HomePage',
     name: 'HomePage',
     component: HomePage,
+    meta: {
+      showTab:true
+    }
+  },
+  {
+    path: '/Mark',
+    name: 'Mark',
+    component: Mark,
+    meta: {
+      showTab:true
+    }
+  },
+  {
+    path: '/CustomerService',
+    name: 'CustomerService',
+    component: CustomerService,
+    meta: {
+      showTab:true
+    }
+  },
+  {
+    path: '/MarkingRecord',
+    name: 'MarkingRecord',
+    component: MarkingRecord,
     meta: {
       showTab:true
     }
