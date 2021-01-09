@@ -41,13 +41,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20f3e09f-20b1-4f29-ae81-0053d8d108fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/CustomerService.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Mark.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/MarkingRecord.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tabbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tabbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/homePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/homePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +81,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/zyj/vueblog/vueblog-java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="D:\developerTools\IntelliJ IDEA 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -134,6 +131,7 @@
       <workItem from="1610001015398" duration="660000" />
       <workItem from="1610014749187" duration="1745000" />
       <workItem from="1610078272967" duration="1173000" />
+      <workItem from="1610166059560" duration="1056000" />
     </task>
     <task id="LOCAL-00001" summary="照妖镜">
       <created>1606046015030</created>
@@ -233,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610001061907</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="细节更改">
+      <created>1610081116051</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610081116051</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,9 +327,9 @@
     <MESSAGE value="1" />
     <MESSAGE value="部署问题" />
     <MESSAGE value="标题与校验" />
-    <MESSAGE value="细节更改" />
     <MESSAGE value="上传图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传图片" />
+    <MESSAGE value="细节更改" />
+    <option name="LAST_COMMIT_MESSAGE" value="细节更改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="0" key="CommitChangelistDialog2" />

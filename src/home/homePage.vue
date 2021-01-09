@@ -291,6 +291,9 @@
                    this.showWeixinDefault = true;
                    alert("当前微信或QQ没有打标记录")
                  }
+               }else if(res.data.data == null){
+                 this.showWeixinDefault = true;
+                 alert(res.data.msg)
                }
               this.showLoading = false;
              })
