@@ -56,7 +56,7 @@
                     },
                     {
                         name: "MarkingRecord",
-                        title: "打标记录",
+                        title: "自动充值",
                         normalIco: require('@/assets/save_ico.png'),
                         activeIco: require('@/assets/save_ico_active.png'),
                         active: 0

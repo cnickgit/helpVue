@@ -230,6 +230,9 @@
           <img src="@/assets/loading.gif">
         </div>
       </div>
+      <div>
+        <a target="_blank" style="margin-left: 90px;" href="https://beian.miit.gov.cn/#/Integrated/index"><b>浙ICP备2021002477号</b></a>
+      </div>
     </div>
 </template>
 
