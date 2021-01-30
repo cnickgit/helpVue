@@ -11,7 +11,9 @@
                     <van-button size="large" type="info" @click="login">登录</van-button>
                 </van-col>
             </van-row>
-
+        </div>
+        <div style="margin-top: 40px;">
+            <a target="_blank" style="margin-left: 100px;" href="https://beian.miit.gov.cn/#/Integrated/index"><b style="color:red;">浙ICP备2021002477号</b></a>
         </div>
     </div>
 </template>
