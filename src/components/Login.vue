@@ -1,6 +1,13 @@
 <template>
     <div>
-        <div style="margin-top: 200px">
+        <div style="margin-left: 120px;margin-top: 100px;">
+            <h2><span>&nbsp;&nbsp;</span>
+                <p></p>
+                QQ:612870
+
+            </h2>
+        </div>
+        <div style="margin-top: 60px">
             <van-cell-group>
                 <van-field v-model.trim="token" label="" placeholder="请输入激活码" />
             </van-cell-group>
@@ -13,7 +20,7 @@
             </van-row>
         </div>
         <div style="margin-top: 40px;">
-            <a target="_blank" style="margin-left: 100px;" href="https://beian.miit.gov.cn/#/Integrated/index"><b style="color:red;">浙ICP备2021002477号</b></a>
+            <a target="_blank" style="margin-left: 100px;" href="https://beian.miit.gov.cn/#/Integrated/index"><b style="color:red;">浙ICP备2021002477号-1</b></a>
         </div>
     </div>
 </template>

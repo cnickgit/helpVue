@@ -6,10 +6,11 @@ module.exports = {
       errors: true
     },
     // 182.92.126.206
+    // 124.71.181.2
     // 配置代理 （以接口 https://www.easy-mock.com/mock/5ce2a7854c85c12abefbae0b/api 说明）
     proxy: {
       "/api": {
-        target: 'http://127.0.0.1:40001/',
+        target: 'http://127.0.0.1:20001/',
         changeOrigin: true, // 是否改变域名
         ws: true,
         pathRewrite: {

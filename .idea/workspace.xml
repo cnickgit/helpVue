@@ -15,39 +15,23 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:vueblog-vue" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20f3e09f-20b1-4f29-ae81-0053d8d108fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_5_9_58__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_5_9_58__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/homePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/homePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Blogs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blogs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Mark.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Mark.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/MarkingRecord.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/MarkingRecord.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,28 +66,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/zyj/vueblog/vueblog-java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="D:\developerTools\IntelliJ IDEA 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\helpVue\dist" />
+      <recent name="D:\github\helpVue\public" />
       <recent name="D:\xm\vueblog\vueblog-vue\src\assets" />
       <recent name="D:\xm\vueblog\vueblog-vue\src" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -132,14 +106,6 @@
       <workItem from="1610001015398" duration="660000" />
       <workItem from="1610014749187" duration="1745000" />
       <workItem from="1610078272967" duration="1173000" />
-      <workItem from="1610166059560" duration="2392000" />
-      <workItem from="1610349047777" duration="48000" />
-      <workItem from="1610511927225" duration="26000" />
-      <workItem from="1610512536581" duration="53000" />
-      <workItem from="1610512604190" duration="83000" />
-      <workItem from="1611657736645" duration="1780000" />
-      <workItem from="1611659940203" duration="2557000" />
-      <workItem from="1611993600283" duration="2196000" />
     </task>
     <task id="LOCAL-00001" summary="照妖镜">
       <created>1606046015030</created>
@@ -239,32 +205,11 @@
       <option name="project" value="LOCAL" />
       <updated>1610001061907</updated>
     </task>
-    <task id="LOCAL-00015" summary="细节更改">
-      <created>1610081116051</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1610081116051</updated>
-    </task>
-    <task id="LOCAL-00016" summary="校验">
-      <created>1610167211335</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1610167211335</updated>
-    </task>
-    <task id="LOCAL-00017" summary="自动充值,备案号">
-      <created>1611663508189</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1611663508189</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -319,47 +264,20 @@
             </State>
           </value>
         </entry>
-        <entry key="3">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-        <option value="2" />
-        <option value="3" />
-      </set>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+        <entry key="2" value="TOOL_WINDOW" />
+      </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -375,28 +293,36 @@
     <MESSAGE value="1" />
     <MESSAGE value="部署问题" />
     <MESSAGE value="标题与校验" />
-    <MESSAGE value="上传图片" />
     <MESSAGE value="细节更改" />
-    <MESSAGE value="校验" />
-    <MESSAGE value="自动充值,备案号" />
-    <option name="LAST_COMMIT_MESSAGE" value="自动充值,备案号" />
+    <MESSAGE value="上传图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传图片" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="281" y="0" key="CommitChangelistDialog2" />
-    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" />
-    <state x="129" y="55" width="1092" height="610" key="DiffContextDialog" />
-    <state x="129" y="55" width="1092" height="610" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" />
-    <state x="463" y="119" key="FileChooserDialogImpl" />
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" />
-    <state x="474" y="65" key="RollbackChangesDialog" />
-    <state x="474" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" />
-    <state x="476" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" />
-    <state x="476" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" />
-    <state x="339" y="162" key="run.anything.popup" />
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" />
-    <state x="346" y="49" key="search.everywhere.popup" />
-    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" />
+    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1612081438224" />
+    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1612081438224" />
+    <state x="129" y="55" width="1092" height="610" key="DiffContextDialog" timestamp="1612081750978">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="55" width="1092" height="610" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1612081750978" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1612081438224" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612081438224" />
+    <state x="114" y="44" key="MergeDialog" timestamp="1612081565033">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="114" y="44" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1612081565033" />
+    <state x="474" y="65" key="RollbackChangesDialog" timestamp="1612081438224" />
+    <state x="474" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612081438224" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1612081438224" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612081438224" />
+    <state x="476" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612083310387">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="476" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1612083310387" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1612081438224" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1612081438224" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1612084780931">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1612084780931" />
   </component>
 </project>

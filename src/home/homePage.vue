@@ -42,7 +42,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="smimg2">买家信誉：<span id="buyerCre" style="color: rgb(102, 102, 102);">{{data.buyerCre}}</span></td>
+                  <td class="smimg2">买家信誉：
+                    <span id="buyerCre" v-if="data.buyerCre != 0" style="color: rgb(102, 102, 102);">{{data.buyerCre}}</span>
+                    <span id="buyerCre" v-if="data.buyerCre == 0" style="color: red;">{{data.buyerCre}}</span>
+                  </td>
                   <td>注册日期：<span id="created" style="color: rgb(102, 102, 102);">{{data.created}}</span></td>
                 </tr>
                 <tr>
