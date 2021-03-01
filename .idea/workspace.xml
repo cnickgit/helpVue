@@ -19,19 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20f3e09f-20b1-4f29-ae81-0053d8d108fb" name="Default Changelist" comment="">
+    <list default="true" id="20f3e09f-20b1-4f29-ae81-0053d8d108fb" name="Default Changelist" comment="上传图片">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_5_9_58__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_5_9_58__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/homePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/homePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Blogs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Blogs.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Mark.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Mark.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/MarkingRecord.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/MarkingRecord.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="D:\developerTools\IntelliJ IDEA 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -78,6 +72,18 @@
       <recent name="D:\xm\vueblog\vueblog-vue\src\assets" />
       <recent name="D:\xm\vueblog\vueblog-vue\src" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -106,6 +112,18 @@
       <workItem from="1610001015398" duration="660000" />
       <workItem from="1610014749187" duration="1745000" />
       <workItem from="1610078272967" duration="1173000" />
+      <workItem from="1613717712043" duration="726000" />
+      <workItem from="1613790077410" duration="1072000" />
+      <workItem from="1613801915770" duration="447000" />
+      <workItem from="1614059345830" duration="599000" />
+      <workItem from="1614071202266" duration="619000" />
+      <workItem from="1614217793415" duration="1499000" />
+      <workItem from="1614220611815" duration="614000" />
+      <workItem from="1614243006167" duration="323000" />
+      <workItem from="1614309871097" duration="1249000" />
+      <workItem from="1614564742184" duration="3616000" />
+      <workItem from="1614582668091" duration="775000" />
+      <workItem from="1614585275667" duration="552000" />
     </task>
     <task id="LOCAL-00001" summary="照妖镜">
       <created>1606046015030</created>
@@ -205,11 +223,18 @@
       <option name="project" value="LOCAL" />
       <updated>1610001061907</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="细节处理">
+      <created>1614218648475</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614218648475</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -264,20 +289,76 @@
             </State>
           </value>
         </entry>
-        <entry key="MAIN">
+        <entry key="3">
           <value>
             <State />
           </value>
         </entry>
+        <entry key="4">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="5">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
-        <entry key="2" value="TOOL_WINDOW" />
-      </map>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="4" />
+        <option value="5" />
+      </set>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -295,7 +376,8 @@
     <MESSAGE value="标题与校验" />
     <MESSAGE value="细节更改" />
     <MESSAGE value="上传图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传图片" />
+    <MESSAGE value="细节处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="细节处理" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1612081438224" />
