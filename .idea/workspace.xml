@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20f3e09f-20b1-4f29-ae81-0053d8d108fb" name="Default Changelist" comment="上传图片">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_5_9_58__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_5_9_58__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="20f3e09f-20b1-4f29-ae81-0053d8d108fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/homePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/homePage.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Idea/cg/csfw_sbss_dev_cg" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="D:\developerTools\IntelliJ IDEA 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -123,7 +121,10 @@
       <workItem from="1614309871097" duration="1249000" />
       <workItem from="1614564742184" duration="3616000" />
       <workItem from="1614582668091" duration="775000" />
-      <workItem from="1614585275667" duration="552000" />
+      <workItem from="1614585275667" duration="3559000" />
+      <workItem from="1615169654494" duration="1188000" />
+      <workItem from="1615170927273" duration="273000" />
+      <workItem from="1615171296323" duration="1398000" />
     </task>
     <task id="LOCAL-00001" summary="照妖镜">
       <created>1606046015030</created>
@@ -230,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614218648475</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="备用方案">
+      <created>1614585926748</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614585926748</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +385,8 @@
     <MESSAGE value="细节更改" />
     <MESSAGE value="上传图片" />
     <MESSAGE value="细节处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="细节处理" />
+    <MESSAGE value="备用方案" />
+    <option name="LAST_COMMIT_MESSAGE" value="备用方案" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1612081438224" />

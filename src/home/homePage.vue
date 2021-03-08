@@ -113,61 +113,81 @@
                         <ul>
                             <li title="跑单兔子">
                                 <div class="pop-up">兔子</div>
-                                <p></p> <span v-if="data.type1 == 0" id="tz" style="color: black;">{{data.type1}}</span>
-                                <span v-if="data.type1 > 0" id="tz" style="color: red;">{{data.type1}}</span>
+                                <p></p>
+                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
+                                <span v-if="data.type1 == 0" id="tz" style="color: black;">{{ code != '0' ? data.type1 : data.fox}}</span>
+                                <span v-if="data.type1 > 0" id="tz" style="color: red;">{{code != '0' ? data.type1 : data.fox}}</span>
                             </li>
                             <li>
                                 <div class="pop-up">蜜獾</div>
-                                <p></p> <span v-if="data.type2 == 0" id="mg" style="color: black;">{{data.type2}}</span>
-                                <span id="mg" v-if="data.type2 > 0" style="color: red;">{{data.type2}}</span>
+                                <p></p>
+                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
+                                <span v-if="data.type2 == 0" id="mg" style="color: black;">{{code != '0' ? data.type2 : 0}}</span>
+                                <span id="mg" v-if="data.type2 > 0" style="color: red;">{{code != '0' ? data.type2 : 0}}</span>
                             </li>
                             <li>
                                 <div class="pop-up">狐狸</div>
-                                <p></p> <span v-if="data.type3 == 0" id="hl" style="color: black;">{{data.type3}}</span>
-                                <span v-if="data.type3 > 0" id="hl" style="color: red;">{{data.type3}}</span>
+                                <p></p>
+                                <span v-if="code == '0'" id="ey" style="color: black;">{{data.fox}}</span>
+                                <span v-if="data.type3 == 0" id="hl" style="color: black;">{{code != '0' ? data.type3 : data.yunBlack}}</span>
+                                <span v-if="data.type3 > 0" id="hl" style="color: red;">{{code != '0' ? data.type3 : data.fox}}</span>
                             </li>
                             <li>
                                 <div class="pop-up">鳄鱼</div>
-                                <p></p> <span v-if="data.type4 == 0" id="ey" style="color: black;">{{data.type4}}</span>
+                                <p></p>
+                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
+                                <span v-if="data.type4 == 0" id="ey" style="color: black;">{{data.type4}}</span>
                                 <span id="ey" v-if="data.type4 > 0" style="color: red;">{{data.type4}}</span>
                             </li>
                             <li>
                                 <div class="pop-up">野狗</div>
-                                <p></p> <span v-if="data.type5 == 0" id="yg" style="color: black;">{{data.type5}}</span>
-                                <span v-if="data.type5 > 0" id="yg" style="color: red;">{{data.type5}}</span>
+                                <p></p>
+                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
+                                <span v-if="data.type5 == 0" id="yg" style="color: black;">{{ code != '0' ? data.type5 : 0}}</span>
+                                <span v-if="data.type5 > 0" id="yg" style="color: red;">{{code != '0' ? data.type5 : 0}}</span>
                             </li>
                             <li>
                                 <div class="pop-up">老鼠</div>
-                                <p></p> <span v-if="data.type6 == 0" id="ls" style="color: black;">{{data.type6}}</span>
-                                <span v-if="data.type6 > 0" id="ls" style="color: red;">{{data.type6}}</span>
+                                <p></p>
+                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
+                                <span v-if="data.type6 == 0" id="ls" style="color: black;">{{code != '0' ? data.type6 : 0}}</span>
+                                <span v-if="data.type6 > 0" id="ls" style="color: red;">{{code != '0' ? data.type6 : 0}}</span>
                             </li>
                             <li>
                                 <div class="pop-up">降权</div>
-                                <p></p> <span v-if="data.downNum == 0" id="downNum" style="color: black;">{{data.downNum}}</span>
-                                <span v-if="data.downNum > 0" id="downNum" style="color: red;">{{data.downNum}}</span>
+                                <p></p>
+                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
+                                <span v-if="data.downNum == 0" id="downNum" style="color: black;">{{code != '0' ? data.downNum : data.jiangNum}}</span>
+                                <span v-if="data.downNum > 0" id="downNum" style="color: red;">{{code != '0' ? data.downNum : data.jiangNum}}</span>
                             </li>
                         </ul>
                         <div class="user_bottom ub of">
                             <p>
-                                好评：<span v-if="data.goodNum == 0" id="goodNum" class="fr" style="color: black;">{{data.goodNum}}</span>
-                                <span v-if="data.goodNum > 0" id="goodNum" class="fr" style="color: red;">{{data.goodNum}}</span>
+                                好评：
+                                <span v-if="code == '0'" id="goodNum" class="fr" style="color: black;">0</span>
+                                <span v-if="data.goodNum == 0" id="goodNum" class="fr" style="color: black;">{{ code != '0' ? data.goodNum : data.fox}}</span>
+                                <span v-if="data.goodNum > 0" id="goodNum" class="fr" style="color: red;">{{code != '0' ? data.goodNum : data.fox}}</span>
                             </p>
                             <p>
-                                差评：<span v-if="data.badNum == 0" id="badNum" class="fr" style="color: black;">{{data.badNum}}</span>
+                                差评：
+                                <span v-if="code == '0'" id="goodNum" class="fr" style="color: black;">0</span>
+                                <span v-if="data.badNum == 0" id="badNum" class="fr" style="color: black;">{{ code != '0' ? data.badNum : 0}}</span>
                                 <span v-if="data.badNum > 0" id="badNum" class="fr"
-                                      style="color: red;">{{data.badNum}}</span>
+                                      style="color: red;">{{code != '0' ? data.badNum : 0}}</span>
                             </p>
                             <p>
-                                证明：<span v-if="data.proveNum == 0" id="proveNum" class="fr" style="color: black;">{{data.proveNum}}</span>
-                                <span v-if="data.proveNum > 0" id="proveNum" class="fr" style="color: red;">{{data.proveNum}}</span>
+                                证明：
+                                <span v-if="code == '0'" id="goodNum" class="fr" style="color: black;">0</span>
+                                <span v-if="data.proveNum == 0" id="proveNum" class="fr" style="color: black;">{{code != '0' ? data.proveNum : 0}}</span>
+                                <span v-if="data.proveNum > 0" id="proveNum" class="fr" style="color: red;">{{code != '' ? data.proveNum : 0}}</span>
                             </p>
                         </div>
                         <div class="user_bottom of">
                             <p>
-                                本周查过商家：<span class="cor2 fr" id="nearWeekShop">{{data.nearWeekShop}}</span>
+                                本周查过商家：<span class="cor2 fr" id="nearWeekShop">{{code != '0' ? data.nearWeekShop : 0}}</span>
                             </p>
                             <p>
-                                上周查过商家：<span class="cor2 fr" id="lastWeekShop">{{data.lastWeekShop}}</span>
+                                上周查过商家：<span class="cor2 fr" id="lastWeekShop">{{code != '0' ? data.lastWeekShop : 0}}</span>
                             </p>
                         </div>
                     </div>
@@ -328,6 +348,7 @@
                 this.showLoading = true;
                 this.$axios.get("/search?searchName=" + this.searchName + "&code=" + this.token).then(res => {
                     console.log("res:", res);
+                    this.data = {};
                     if (res.data.data.code === '0') {
                         //备用方案
                         this.showWangwangDefault = false;
@@ -340,6 +361,7 @@
                         this.showWangwangDefault = true;
                         alert("账号不存在")
                     } else {
+                        this.code = '';
                         this.showWangwangDefault = false;
                         this.data = res.data.data;
                         if (this.data.vip_level == '0') {
