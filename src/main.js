@@ -18,6 +18,8 @@ import "./permission"
 Vue.use(Element)
 Vue.use(mavonEditor)
 
+
+
 Vue.use(Router)
 const originalPush = Router.prototype.push
 Router.prototype.push = function push(location) {

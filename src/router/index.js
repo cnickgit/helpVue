@@ -20,7 +20,8 @@ const routes = [
     name: 'HomePage',
     component: HomePage,
     meta: {
-      showTab:true
+      showTab:true,
+      title: '照妖镜'
     }
   },
   {
@@ -28,7 +29,8 @@ const routes = [
     name: 'Mark',
     component: Mark,
     meta: {
-      showTab:true
+      showTab:true,
+      title: '照妖镜'
     }
   },
   {
@@ -36,7 +38,8 @@ const routes = [
     name: 'CustomerService',
     component: CustomerService,
     meta: {
-      showTab:true
+      showTab:true,
+      title: '照妖镜'
     }
   },
   {
@@ -44,7 +47,8 @@ const routes = [
     name: 'MarkingRecord',
     component: MarkingRecord,
     meta: {
-      showTab:true
+      showTab:true,
+      title: '照妖镜'
     }
   },
   {
@@ -52,7 +56,8 @@ const routes = [
     name: 'UserLogin',
     component: UserLogin,
     meta: {
-          showTab:false
+          showTab:false,
+          title: '照妖镜'
     }
   },
   // {
@@ -70,7 +75,8 @@ const routes = [
     name: 'My',
     component: My,
     meta: {
-          showTab:true
+          showTab:true,
+          title: '照妖镜'
     }
   },
   {
@@ -110,6 +116,13 @@ const router = new VueRouter({
   mode: 'hash',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to,from,next) => {
+  if(to.meta.title){
+    document.title = to.meta.title
+  }
+  next();
 })
 
 export default router
