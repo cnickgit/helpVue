@@ -349,7 +349,10 @@
                 this.$axios.get("/search?searchName=" + this.searchName + "&code=" + this.token).then(res => {
                     console.log("res:", res);
                     this.data = {};
-                    if (res.data.data.code === '0') {
+                    if(res.data.code != null && res.data.code == 400){
+                        alert(res.data.msg);
+                        this.showLoading = false;
+                    } else if (res.data.data.code === '0') {
                         //备用方案
                         this.showWangwangDefault = false;
                         this.code = res.data.data.code;
