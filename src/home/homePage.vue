@@ -85,7 +85,7 @@
                         <div style="text-align: right;">
                             <a style="font-size: 0.1rem;text-decoration: underline;"
                                href="http://file.cy1788.com/ckdown/video/down/jqup.rar" target="_blank">
-                                PC降权提交软件（12月10日更新）
+                                (PC降权提交软件3.30版本)
                             </a>
                         </div>
                         <div class="userjb_t">
