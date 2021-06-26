@@ -35,52 +35,53 @@
                 </div>
                 <template v-else>
                     <div class="wwdata">
-                        <table width="100%">
-                            <tbody>
-                            <tr>
-                                <td>买家：<span id="aliimSim">{{code != '0' ? data.aliimSim+'****' : data.wangwang}}</span>
-                                </td>
-                                <td class="smimg">实名认证： <span id="nameconform"
-                                                              :style="{color: data.nameconform_word_color}">{{code != '0' ? data.nameconform_word : data.renZheng}}</span>&nbsp;
-                                    <span id="vip_level" style="color: rgb(255, 124, 0);">{{hy}} </span>&nbsp; <span
-                                            id="vip_info" style="color: rgb(97, 63, 113);">{{tbhy}}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="smimg2">买家信誉：
-                                    <span id="buyerCre" v-if="data.buyerCre == '0心'" style="color: red;">{{code != '0' ? data.buyerCre : data.buyerGoodNum}}</span>
-                                    <span id="buyerCre" v-else
-                                          style="color: rgb(102, 102, 102);">{{code != '0' ? data.buyerCre : data.buyerGoodNum}}</span>
-                                </td>
-                                <td>注册日期：<span id="created" style="color: rgb(102, 102, 102);">{{code != '0' ? data.created : data.wwcreatedStr}}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="smimg2">商家信誉：
-                                    <span v-if="data.sellerCredit == '未开店'" id="sellerCredit" style="color: red;">{{code != '0' ? data.sellerCredit : data.sellerTotalNum}}</span>
-                                    <span v-if="data.sellerCredit != '未开店'" id="sellerCredit"
-                                          style="color: rgb(102, 102, 102);">{{ code != '0' ? data.sellerCredit : data.sellerTotalNum}}</span>
-                                </td>
-                                <td>淘龄：<span id="registDay" style="color: rgb(102, 102, 102);">{{code != '0' ? data.registDay : data.taoling + '年'}}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>性别：
-                                    <span v-if="data.sex != '保密'" id="sex" style="color: rgb(102, 102, 102);">{{code != '0' ? data.sex : data.gender}}</span>
-                                    <span v-if="data.sex == '保密'" id="sex" style="color: red;">{{code != '0' ? data.sex : data.gender}}</span>
-                                </td>
-                                <td>买家总周平均：<span id="buyerAvg">{{code != '0' ? data.buyerAvg : data.weekCreditAverage}}</span></td>
-                            </tr>
-                            <tr>
-                                <td>好评率：<span id="received_rate" style="color: rgb(102, 102, 102);">{{code != '0' ? data.received_rate : data.receivedRate}}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">查询时间：<span id="queryTime">{{code != '0' ? data.queryTime : data.searchTime}}</span></td>
-                            </tr>
-                            </tbody>
-                        </table>
+                        <img :src="urlPriex + baseImg"/>
                     </div>
+<!--                        <table width="100%">-->
+<!--                            <tbody>-->
+<!--                            <tr>-->
+<!--                                <td>买家：<span id="aliimSim">{{code != '0' ? data.aliimSim+'****' : data.wangwang}}</span>-->
+<!--                                </td>-->
+<!--                                <td class="smimg">实名认证： <span id="nameconform"-->
+<!--                                                              :style="{color: data.nameconform_word_color}">{{code != '0' ? data.nameconform_word : data.renZheng}}</span>&nbsp;-->
+<!--                                    <span id="vip_level" style="color: rgb(255, 124, 0);">{{hy}} </span>&nbsp; <span-->
+<!--                                            id="vip_info" style="color: rgb(97, 63, 113);">{{tbhy}}</span>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td class="smimg2">买家信誉：-->
+<!--                                    <span id="buyerCre" v-if="data.buyerCre == '0心'" style="color: red;">{{code != '0' ? data.buyerCre : data.buyerGoodNum}}</span>-->
+<!--                                    <span id="buyerCre" v-else-->
+<!--                                          style="color: rgb(102, 102, 102);">{{code != '0' ? data.buyerCre : data.buyerGoodNum}}</span>-->
+<!--                                </td>-->
+<!--                                <td>注册日期：<span id="created" style="color: rgb(102, 102, 102);">{{code != '0' ? data.created : data.wwcreatedStr}}</span>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td class="smimg2">商家信誉：-->
+<!--                                    <span v-if="data.sellerCredit == '未开店'" id="sellerCredit" style="color: red;">{{code != '0' ? data.sellerCredit : data.sellerTotalNum}}</span>-->
+<!--                                    <span v-if="data.sellerCredit != '未开店'" id="sellerCredit"-->
+<!--                                          style="color: rgb(102, 102, 102);">{{ code != '0' ? data.sellerCredit : data.sellerTotalNum}}</span>-->
+<!--                                </td>-->
+<!--                                <td>淘龄：<span id="registDay" style="color: rgb(102, 102, 102);">{{code != '0' ? data.registDay : data.taoling + '年'}}</span>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>性别：-->
+<!--                                    <span v-if="data.sex != '保密'" id="sex" style="color: rgb(102, 102, 102);">{{code != '0' ? data.sex : data.gender}}</span>-->
+<!--                                    <span v-if="data.sex == '保密'" id="sex" style="color: red;">{{code != '0' ? data.sex : data.gender}}</span>-->
+<!--                                </td>-->
+<!--                                <td>买家总周平均：<span id="buyerAvg">{{code != '0' ? data.buyerAvg : data.weekCreditAverage}}</span></td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>好评率：<span id="received_rate" style="color: rgb(102, 102, 102);">{{code != '0' ? data.received_rate : data.receivedRate}}</span>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td colspan="2">查询时间：<span id="queryTime">{{code != '0' ? data.queryTime : data.searchTime}}</span></td>-->
+<!--                            </tr>-->
+<!--                            </tbody>-->
+<!--                        </table>-->
                     <div class="userbox3">
                         <div style="text-align: right;">
                             <a style="font-size: 0.1rem;text-decoration: underline;"
@@ -111,83 +112,86 @@
                 </span>
                         </div>
                         <ul>
-                            <li title="跑单兔子">
-                                <div class="pop-up">兔子</div>
-                                <p></p>
-                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
-                                <span v-if="data.type1 == 0" id="tz" style="color: black;">{{ code != '0' ? data.type1 : data.fox}}</span>
-                                <span v-if="data.type1 > 0" id="tz" style="color: red;">{{code != '0' ? data.type1 : data.fox}}</span>
-                            </li>
-                            <li>
-                                <div class="pop-up">蜜獾</div>
-                                <p></p>
-                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
-                                <span v-if="data.type2 == 0" id="mg" style="color: black;">{{code != '0' ? data.type2 : 0}}</span>
-                                <span id="mg" v-if="data.type2 > 0" style="color: red;">{{code != '0' ? data.type2 : 0}}</span>
-                            </li>
-                            <li>
-                                <div class="pop-up">狐狸</div>
-                                <p></p>
-                                <span v-if="code == '0'" id="ey" style="color: black;">{{data.fox}}</span>
-                                <span v-if="data.type3 == 0" id="hl" style="color: black;">{{code != '0' ? data.type3 : data.yunBlack}}</span>
-                                <span v-if="data.type3 > 0" id="hl" style="color: red;">{{code != '0' ? data.type3 : data.fox}}</span>
-                            </li>
-                            <li>
-                                <div class="pop-up">鳄鱼</div>
-                                <p></p>
-                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
-                                <span v-if="data.type4 == 0" id="ey" style="color: black;">{{data.type4}}</span>
-                                <span id="ey" v-if="data.type4 > 0" style="color: red;">{{data.type4}}</span>
-                            </li>
-                            <li>
-                                <div class="pop-up">野狗</div>
-                                <p></p>
-                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
-                                <span v-if="data.type5 == 0" id="yg" style="color: black;">{{ code != '0' ? data.type5 : 0}}</span>
-                                <span v-if="data.type5 > 0" id="yg" style="color: red;">{{code != '0' ? data.type5 : 0}}</span>
-                            </li>
-                            <li>
-                                <div class="pop-up">老鼠</div>
-                                <p></p>
-                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
-                                <span v-if="data.type6 == 0" id="ls" style="color: black;">{{code != '0' ? data.type6 : 0}}</span>
-                                <span v-if="data.type6 > 0" id="ls" style="color: red;">{{code != '0' ? data.type6 : 0}}</span>
-                            </li>
-                            <li>
-                                <div class="pop-up">降权</div>
-                                <p></p>
-                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>
-                                <span v-if="data.downNum == 0" id="downNum" style="color: black;">{{code != '0' ? data.downNum : data.jiangNum}}</span>
-                                <span v-if="data.downNum > 0" id="downNum" style="color: red;">{{code != '0' ? data.downNum : data.jiangNum}}</span>
-                            </li>
+                            <img :src="urlPriex+downImg"/>
                         </ul>
-                        <div class="user_bottom ub of">
-                            <p>
-                                好评：
-                                <span v-if="code == '0'" id="goodNum" class="fr" style="color: black;">0</span>
-                                <span v-if="data.goodNum == 0" id="goodNum" class="fr" style="color: black;">{{ code != '0' ? data.goodNum : data.fox}}</span>
-                                <span v-if="data.goodNum > 0" id="goodNum" class="fr" style="color: red;">{{code != '0' ? data.goodNum : data.fox}}</span>
-                            </p>
-                            <p>
-                                差评：
-                                <span v-if="code == '0'" id="goodNum" class="fr" style="color: black;">0</span>
-                                <span v-if="data.badNum == 0" id="badNum" class="fr" style="color: black;">{{ code != '0' ? data.badNum : 0}}</span>
-                                <span v-if="data.badNum > 0" id="badNum" class="fr"
-                                      style="color: red;">{{code != '0' ? data.badNum : 0}}</span>
-                            </p>
-                            <p>
-                                证明：
-                                <span v-if="code == '0'" id="goodNum" class="fr" style="color: black;">0</span>
-                                <span v-if="data.proveNum == 0" id="proveNum" class="fr" style="color: black;">{{code != '0' ? data.proveNum : 0}}</span>
-                                <span v-if="data.proveNum > 0" id="proveNum" class="fr" style="color: red;">{{code != '' ? data.proveNum : 0}}</span>
-                            </p>
-                        </div>
+<!--                        <ul>-->
+<!--                            <li title="跑单兔子">-->
+<!--                                <div class="pop-up">兔子</div>-->
+<!--                                <p></p>-->
+<!--                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>-->
+<!--                                <span v-if="data.type1 == 0" id="tz" style="color: black;">{{ code != '0' ? data.type1 : data.fox}}</span>-->
+<!--                                <span v-if="data.type1 > 0" id="tz" style="color: red;">{{code != '0' ? data.type1 : data.fox}}</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <div class="pop-up">蜜獾</div>-->
+<!--                                <p></p>-->
+<!--                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>-->
+<!--                                <span v-if="data.type2 == 0" id="mg" style="color: black;">{{code != '0' ? data.type2 : 0}}</span>-->
+<!--                                <span id="mg" v-if="data.type2 > 0" style="color: red;">{{code != '0' ? data.type2 : 0}}</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <div class="pop-up">狐狸</div>-->
+<!--                                <p></p>-->
+<!--                                <span v-if="code == '0'" id="ey" style="color: black;">{{data.fox}}</span>-->
+<!--                                <span v-if="data.type3 == 0" id="hl" style="color: black;">{{code != '0' ? data.type3 : data.yunBlack}}</span>-->
+<!--                                <span v-if="data.type3 > 0" id="hl" style="color: red;">{{code != '0' ? data.type3 : data.fox}}</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <div class="pop-up">鳄鱼</div>-->
+<!--                                <p></p>-->
+<!--                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>-->
+<!--                                <span v-if="data.type4 == 0" id="ey" style="color: black;">{{data.type4}}</span>-->
+<!--                                <span id="ey" v-if="data.type4 > 0" style="color: red;">{{data.type4}}</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <div class="pop-up">野狗</div>-->
+<!--                                <p></p>-->
+<!--                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>-->
+<!--                                <span v-if="data.type5 == 0" id="yg" style="color: black;">{{ code != '0' ? data.type5 : 0}}</span>-->
+<!--                                <span v-if="data.type5 > 0" id="yg" style="color: red;">{{code != '0' ? data.type5 : 0}}</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <div class="pop-up">老鼠</div>-->
+<!--                                <p></p>-->
+<!--                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>-->
+<!--                                <span v-if="data.type6 == 0" id="ls" style="color: black;">{{code != '0' ? data.type6 : 0}}</span>-->
+<!--                                <span v-if="data.type6 > 0" id="ls" style="color: red;">{{code != '0' ? data.type6 : 0}}</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <div class="pop-up">降权</div>-->
+<!--                                <p></p>-->
+<!--                                <span v-if="code == '0'" id="ey" style="color: black;">0</span>-->
+<!--                                <span v-if="data.downNum == 0" id="downNum" style="color: black;">{{code != '0' ? data.downNum : data.jiangNum}}</span>-->
+<!--                                <span v-if="data.downNum > 0" id="downNum" style="color: red;">{{code != '0' ? data.downNum : data.jiangNum}}</span>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                        <div class="user_bottom ub of">-->
+<!--                            <p>-->
+<!--                                好评：-->
+<!--                                <span v-if="code == '0'" id="goodNum" class="fr" style="color: black;">0</span>-->
+<!--                                <span v-if="data.goodNum == 0" id="goodNum" class="fr" style="color: black;">{{ code != '0' ? data.goodNum : data.fox}}</span>-->
+<!--                                <span v-if="data.goodNum > 0" id="goodNum" class="fr" style="color: red;">{{code != '0' ? data.goodNum : data.fox}}</span>-->
+<!--                            </p>-->
+<!--                            <p>-->
+<!--                                差评：-->
+<!--                                <span v-if="code == '0'" id="goodNum" class="fr" style="color: black;">0</span>-->
+<!--                                <span v-if="data.badNum == 0" id="badNum" class="fr" style="color: black;">{{ code != '0' ? data.badNum : 0}}</span>-->
+<!--                                <span v-if="data.badNum > 0" id="badNum" class="fr"-->
+<!--                                      style="color: red;">{{code != '0' ? data.badNum : 0}}</span>-->
+<!--                            </p>-->
+<!--                            <p>-->
+<!--                                证明：-->
+<!--                                <span v-if="code == '0'" id="goodNum" class="fr" style="color: black;">0</span>-->
+<!--                                <span v-if="data.proveNum == 0" id="proveNum" class="fr" style="color: black;">{{code != '0' ? data.proveNum : 0}}</span>-->
+<!--                                <span v-if="data.proveNum > 0" id="proveNum" class="fr" style="color: red;">{{code != '' ? data.proveNum : 0}}</span>-->
+<!--                            </p>-->
+<!--                        </div>-->
                         <div class="user_bottom of">
                             <p>
-                                本周查过商家：<span class="cor2 fr" id="nearWeekShop">{{code != '0' ? data.nearWeekShop : 0}}</span>
+                                本周查过商家：<span class="cor2 fr" id="nearWeekShop">{{obj.nearWeekShop}}</span>
                             </p>
                             <p>
-                                上周查过商家：<span class="cor2 fr" id="lastWeekShop">{{code != '0' ? data.lastWeekShop : 0}}</span>
+                                上周查过商家：<span class="cor2 fr" id="lastWeekShop">{{obj.lastWeekShop}}</span>
                             </p>
                         </div>
                     </div>
@@ -292,6 +296,8 @@
         },
         data() {
             return {
+                baseImg:'',
+                downImg: '',
                 code: '',
                 tbhy: '',
                 hy: '',
@@ -308,6 +314,8 @@
                 showEy: false,
                 showHuli: false,
                 data: {},
+                obj: {},
+                urlPriex: 'data:image/png;base64,',
                 showLoading: false
             }
         },
@@ -339,7 +347,20 @@
                     this.showLoading = false;
                 })
             },
-
+            base64ImgtoFile(dataurl, filename = 'file') {
+                let arr = dataurl.split(',')
+                let mime = arr[0].match(/:(.*?);/)[1]
+                let suffix = mime.split('/')[1]
+                let bstr = atob(arr[1])
+                let n = bstr.length
+                let u8arr = new Uint8Array(n)
+                while (n--) {
+                    u8arr[n] = bstr.charCodeAt(n)
+                }
+                return new File([u8arr], `${filename}.${suffix}`, {
+                    type: mime
+                })
+            },
             search() {
                 if (this.searchName == '' || this.searchName == null) {
                     alert("提交长度非法，旺旺为2-25位，请重新提交！")
@@ -366,7 +387,12 @@
                     } else {
                         this.code = '';
                         this.showWangwangDefault = false;
-                        this.data = res.data.data;
+                        this.data = res.data.data
+                        // base64编码的图片
+                        this.baseImg = this.data.baseImg;
+                        this.downImg = this.data.downImg;
+                        this.obj = JSON.parse(this.data.jsonObject)
+                        console.log("obj:",this.obj)
                         if (this.data.vip_level == '0') {
                             this.hy = '普通会员';
                         } else if (this.data.vip_level == '10') {
